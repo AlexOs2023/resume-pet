@@ -368,10 +368,13 @@ router.get('/work', function (req, res) {
       },
     })
   }),
-  router.get('/program', function (req, res) {
+  // ================================================================
+
+  router.get('/program1', function (req, res) {
     //             ↙ cюди вводимо назву файлу з сontainer
-    res.render('program', {
-      layout: 'big',
+    res.render('program1', {
+      layout: 'program1',
+
       program: {
         excursion: {
           name: 'Cultural Tour',
@@ -451,7 +454,7 @@ router.get('/work', function (req, res) {
         },
       },
     })
-  })(
-    // Підключаємо роутер до бек-енду
-    (module.exports = router),
-  )
+  })
+
+// ================================================================
+module.exports = router
