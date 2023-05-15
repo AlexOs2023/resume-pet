@@ -1,5 +1,3 @@
-hui
-
 <main>
     {{#with program}}
     {{#with excursion}}
@@ -8,8 +6,6 @@ hui
     <h3>{{city}},
         {{country}}</h3>
     {{/with}} --}}
-
-
     <h3>{{location.city}},
         {{location.country}}</h3>
     <p>The tour is on: {{date}}</p>
@@ -17,7 +13,6 @@ hui
     {{#each program}}
     <h3>{{name}}</h3>
     <ul>
-
         <li>type of tour: "{{type}}"</li>
         <li>length of tour: {{duration}} hours</li>
     </ul>
@@ -34,13 +29,10 @@ hui
         <li>audio guide available: {{#if audio_guide}}Yes{{/if}}</li>
     </ul>
     {{/each}}
-
     <em> Address: {{location.address}},
         {{location.city}},
         {{location.country}}.</em> {{/with}}
-
     {{/if}}
-
     {{#if venue}} <h4>You will visit: {{venue.name}}</h4>
     {{#each performers}}
     <ul>
@@ -48,7 +40,6 @@ hui
         <li>Type: {{type}}</li>
     </ul>
     {{/each}}
-
     <em> Address: {{venue.location.address}},
         {{venue.location.city}},
         {{venue.location.country}}.</em>
@@ -61,31 +52,7 @@ hui
     {{/with}}
     <hr>
     {{/with}}
-
-
-
-
     {{/each}}
     {{/with}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {{/with}}
 </main>
